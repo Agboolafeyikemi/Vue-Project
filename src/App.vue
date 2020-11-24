@@ -55,7 +55,6 @@ export default {
     },
   },
   mounted () {
-    axios
     this.loadTableData();
   }
 }
