@@ -1,0 +1,38 @@
+
+<template>
+  <div class="loader"></div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style lang="scss">
+.loader {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  &:before {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: rgb(252, 131, 10) transparent #44475C transparent;
+    animation: Loader 1.2s linear infinite;
+    z-index: -700;
+  }
+}
+
+@keyframes Loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+</style>
